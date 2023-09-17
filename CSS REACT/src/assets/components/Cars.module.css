@@ -1,0 +1,20 @@
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 100px;
+  min-height: 100vh;
+}
+
+.ul {
+  display: flex;
+}
+
+.ulDark {
+  background: red;
+}
+
+button {
+  cursor: pointer;
+}
