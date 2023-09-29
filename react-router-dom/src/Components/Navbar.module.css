@@ -12,11 +12,8 @@ nav a {
   color: #000;
 }
 
-nav a:hover {
-  color: #ccc;
-}
-
 .active {
   background-color: #ccc;
-  color: #fff;
+  color: black;
+  font-weight: bold;
 }
