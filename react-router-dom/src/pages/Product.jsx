@@ -1,7 +1,8 @@
 import { Link, useParams } from 'react-router-dom';
 import useFetch from '../hooks/useFetch';
-
+import { useCounterContext } from '../hooks/useCounterContext';
 const Product = () => {
+  const { counter } = useCounterContext();
   const { id } = useParams();
   const url = `http://localhost:3000/products/${id}`;
   const { data: product, loading, error } = useFetch(url);
@@ -9,6 +10,7 @@ const Product = () => {
   return (
     <div>
       <p>ID DO PRODUTO {id}</p>
+      {counter}
       <ul>
         {product ? (
           <li>
